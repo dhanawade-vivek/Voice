@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E3940"
+    android:backgroundTint="#2E3940"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0.33"
+        android:src="@drawable/_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btncall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#1298B9"
+            android:drawableTop="@drawable/ic_baseline_call_24"
+            android:paddingTop="50dp"
+            android:text="Caller"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btnmess"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#F2B705"
+            android:drawableTop="@drawable/ic_baseline_message_24"
+            android:paddingTop="50dp"
+            android:text="Message"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnnot"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#DB5461"
+            android:drawableTop="@drawable/ic_baseline_notes_24"
+            android:paddingTop="50dp"
+            android:text="Notes"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btnbat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#26A699"
+            android:drawableTop="@drawable/ic_baseline_battery_full_24"
+            android:paddingTop="50dp"
+            android:text="Battery"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+</LinearLayout>

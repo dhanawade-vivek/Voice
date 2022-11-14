@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.voiceassistance">
+
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Voiceassistance"
+        tools:compileSdk="31"
+        tools:minsdk="21"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".Battery"
+            android:screenOrientation="fullSensor" />
+
+        <activity
+            android:name=".CallLog"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Notes_MainActivity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Notes_Activity2"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".EditNoteActivity"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor" />
+
+        <activity
+            android:name=".Caller"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="fullSensor"
+            tools:node="merge-only-attributes">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+    </application>
+
+</manifest>

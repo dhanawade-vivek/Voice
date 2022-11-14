@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Voice Assistance</string>
+    <string name="title_activity_2">Add Notes</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="save">SAVE</string>
+    <string name="read">Read</string>
+    <string name="tap_to_add_read_notes">TAP TO ADD/ READ NOTES</string>
+</resources>
